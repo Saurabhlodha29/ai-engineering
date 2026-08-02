@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 splitter = SemanticChunker(
-    NVIDIAEmbeddings(model="nvidia/nv-embedqa-e5-v5"),
+    NVIDIAEmbeddings(model="nvidia/nemotron-3-embed-1b"),
     breakpoint_threshold_type = "standard_deviation",
-    breakpoint_threshold_amount = 0.5
+    breakpoint_threshold_amount = 0.4
 )
 
 text = """

@@ -35,7 +35,3 @@ final_chain = RunnableSequence(joke_gen_chain, parallel_chain)
 result = final_chain.invoke({"topic" : "Global Warming"})
 
 print(result)
-
-
-
-
