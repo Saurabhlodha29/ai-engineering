@@ -51,15 +51,3 @@ def retrieve_all_threads():
         all_threads.add(checkpoint.config['configurable']['thread_id'])
         
     return list(all_threads)
-
-
-# Testing the database : 
-
-# CONFIG = {'configurable':{'thread_id':'thread-1'}}
-
-# response = chatbot.invoke(
-#                 {'messages':[HumanMessage(content = "Hi my name is Saurabh")]},
-#                 config = CONFIG
-#             )
-
-# print(response)

@@ -94,5 +94,5 @@ if user_input:
             )
         )
 
-    # Add the message into messag history
+    # Add the message into message history
     st.session_state['message_history'].append({'role':'assistant','content':ai_message})

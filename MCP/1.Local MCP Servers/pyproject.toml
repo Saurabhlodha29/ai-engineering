@@ -1,0 +1,15 @@
+[project]
+name = "1-local-mcp-servers"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Saurabh Lodha", email = "saurabhlodha2006@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "mcp[cli]>=2.2.0",
+]
+
+[project.scripts]
+1-local-mcp-servers = "1_local_mcp_servers:main"

@@ -1,0 +1,76 @@
+@page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+    @bottom-center {
+        content: "__MCP_FOOTER__";
+        font-family: 'Liberation Sans', Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #8B7481;
+    }
+}
+@page cover { margin: 0; @bottom-center { content: ""; } }
+* { box-sizing: border-box; }
+body { font-family: 'Liberation Serif', 'DejaVu Serif', serif; font-size: 10.3pt; line-height: 1.55; color: #2B252B; margin: 0; padding: 0; }
+h1, h2, h3, h4, .heading-font { font-family: 'Liberation Sans', Arial, sans-serif; }
+.cover-svg-wrap { page: cover; width: 210mm; height: 297mm; page-break-after: always; overflow: hidden; margin: 0; padding: 0; }
+.cover-svg-wrap svg { display: block; width: 210mm; height: 297mm; }
+.chapter-header { margin-bottom: 7mm; padding-bottom: 4mm; border-bottom: 2.2pt solid #44172E; }
+.chapter-header .eyebrow { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 8.5pt; letter-spacing: 2.5px; text-transform: uppercase; color: #7D3F68; font-weight: bold; margin-bottom: 2mm; }
+.chapter-header h1 { font-size: 21pt; color: #2B252B; margin: 0; font-weight: bold; }
+h2.section { font-size: 14pt; color: #ffffff; background: #44172E; padding: 2.6mm 5mm; border-radius: 3px; margin: 9mm 0 4mm 0; font-weight: bold; page-break-after: avoid; }
+h2.section .num { color: #C995AB; margin-right: 2mm; }
+h3.sub { font-size: 11.8pt; color: #6A2148; margin: 6mm 0 2.5mm 0; font-weight: bold; border-left: 3.5pt solid #7D3F68; padding-left: 3mm; page-break-after: avoid; }
+h4.micro { font-size: 10.3pt; color: #7D3F68; margin: 4mm 0 1.8mm 0; font-weight: bold; text-transform: uppercase; letter-spacing: 0.6px; page-break-after: avoid; }
+p { margin: 0 0 2.8mm 0; text-align: justify; }
+ul, ol { margin: 0 0 3mm 0; padding-left: 5mm; }
+li { margin-bottom: 1.4mm; text-align: justify; }
+strong { color: #44172E; }
+.summary-box strong { color: #E0B0C2; }
+em.term { color: #6A2148; font-style: italic; }
+.callout { border-radius: 4px; padding: 3.2mm 4.5mm; margin: 4mm 0; font-size: 9.6pt; page-break-inside: avoid; border-left: 3.5pt solid; }
+.callout .callout-label { font-family: 'Liberation Sans', Arial, sans-serif; font-weight: bold; font-size: 8.6pt; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 1.3mm; display: block; }
+.callout p:last-child { margin-bottom: 0; }
+.callout.important { background: #F1E0E6; border-color: #7D3F68; }
+.callout.important .callout-label { color: #6A2148; }
+.callout.interview { background: #F3E5EB; border-color: #A86488; }
+.callout.interview .callout-label { color: #7D3F68; }
+.callout.mistake { background: #F2DFE6; border-color: #934C70; }
+.callout.mistake .callout-label { color: #6A2148; }
+.callout.practice { background: #F4E7EA; border-color: #8D456B; }
+.callout.practice .callout-label { color: #6A2148; }
+.callout.insight { background: #F0E3E8; border-color: #B58AA0; }
+.callout.insight .callout-label { color: #74445F; }
+table { width: 100%; border-collapse: collapse; margin: 3.5mm 0 4.5mm 0; font-size: 9.3pt; page-break-inside: avoid; }
+th { background: #44172E; color: #ffffff; font-family: 'Liberation Sans', Arial, sans-serif; font-weight: bold; text-align: left; padding: 2.4mm 3mm; font-size: 9pt; }
+td { padding: 2.2mm 3mm; border-bottom: 0.6pt solid #D7BCC7; vertical-align: top; }
+tr:nth-child(even) td { background: #F1E7EB; }
+.codeblock { background: #241D24; color: #F8F0EC; border-radius: 4px; padding: 3.5mm 4.5mm; font-family: 'Liberation Mono', 'DejaVu Sans Mono', monospace; font-size: 8.6pt; line-height: 1.55; margin: 3.5mm 0; page-break-inside: avoid; white-space: pre-wrap; }
+.codeblock .cmt { color: #C995AB; }
+.codeblock .kw { color: #E0B0C2; }
+.diagram-wrap { margin: 4mm 0 5mm 0; text-align: center; page-break-inside: avoid; }
+.diagram-caption { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 8.6pt; color: #6C5C66; font-style: italic; margin-top: 1.5mm; }
+.quick-revision { background: #FBF8F5; border: 0.8pt solid #D7BCC7; border-radius: 4px; padding: 3.5mm 5mm; margin: 6mm 0 2mm 0; page-break-inside: avoid; }
+.quick-revision .qr-title { font-family: 'Liberation Sans', Arial, sans-serif; font-weight: bold; font-size: 10pt; color: #44172E; margin-bottom: 2mm; display: flex; align-items: center; }
+.quick-revision .qr-title::before { content: "↻"; margin-right: 2mm; color: #7D3F68; }
+.quick-revision ul { margin-bottom: 0; }
+.quick-revision li { font-size: 9.4pt; }
+.page-break { page-break-before: always; }
+.summary-box { background: #44172E; color: #ffffff; border-radius: 5px; padding: 5mm 6mm; margin: 4mm 0 6mm 0; }
+.summary-box h2.section { background: none; padding: 0; margin: 0 0 3mm 0; color: #ffffff; }
+.summary-box ul { padding-left: 5mm; }
+.summary-box li { margin-bottom: 2mm; color: #F3E8ED; }
+.revision-grid { display: flex; flex-wrap: wrap; gap: 4mm; }
+.revision-card { background: #ffffff; border: 0.8pt solid #D7BCC7; border-top: 3pt solid #7D3F68; border-radius: 4px; padding: 3.5mm 4mm; width: 100%; margin-bottom: 3.5mm; page-break-inside: avoid; }
+.revision-card h4 { margin: 0 0 1.8mm 0; color: #44172E; font-family: 'Liberation Sans', Arial, sans-serif; font-size: 10pt; }
+.revision-card p, .revision-card ul { font-size: 9.2pt; margin-bottom: 0; }
+.iq-list { list-style: none; padding: 0; margin: 3mm 0; }
+.iq-list li { background: #F1E7EB; border-left: 3pt solid #A86488; padding: 2.8mm 4mm; margin-bottom: 2.8mm; font-size: 9.6pt; border-radius: 2px; }
+.iq-list .qnum { color: #7D3F68; font-weight: bold; font-family: 'Liberation Sans', Arial, sans-serif; margin-right: 1.5mm; }
+.further-reading a { color: #6A2148; }
+.further-reading li { font-size: 9.4pt; }
+.code-compare { display: flex; gap: 3.5mm; margin: 3.5mm 0; }
+.code-compare .code-col { width: 50%; }
+.code-compare .code-label { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 8.6pt; font-weight: bold; color: #6C5C66; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 1.3mm; }
+.code-compare .codeblock { font-size: 7.7pt; margin: 0; }
+.component-strip { display: flex; flex-wrap: wrap; gap: 2.5mm; margin: 3mm 0 5mm 0; }
+.component-strip span { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 8.4pt; background: #F0E0E7; color: #44172E; padding: 1.6mm 3.2mm; border-radius: 12px; border: 0.6pt solid #D7BCC7; }

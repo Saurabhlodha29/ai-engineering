@@ -1,0 +1,17 @@
+# ==========================================
+# MODEL CONTEXT PROTOCOL (MCP) DEPENDENCIES
+# ==========================================
+
+# These dependencies would not be installed using normal commands. After installing uv, they will have : 
+# uv pip install -r ../../requirements.txt
+
+# Core Protocol & Developer Support Tools
+uv
+mcp[cli]
+
+# Web Frameworks & Async Runner Engines (Required for Remote SSE Servers)
+fastapi
+uvicorn
+
+# Database Storage Drivers (Synchronous & Asynchronous)
+aiosqlite
