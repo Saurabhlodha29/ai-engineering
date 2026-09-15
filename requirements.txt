@@ -8,6 +8,8 @@
 # Core Protocol & Developer Support Tools
 uv
 mcp[cli]
+langchain[mcp]
+langchain-mcp-adapters
 
 # Web Frameworks & Async Runner Engines (Required for Remote SSE Servers)
 fastapi
