@@ -17,3 +17,21 @@ uvicorn
 
 # Database Storage Drivers (Synchronous & Asynchronous)
 aiosqlite
+
+# ==========================================
+# LANGCHAIN & LANGGRAPH DEPENDENCIES
+# ==========================================
+
+langgraph
+langchain-core
+langchain-nvidia-ai-endpoints
+langchain-groq
+langchain-huggingface
+langchain-community
+langgraph-checkpoint-sqlite
+
+# Other necessary requirements : 
+dotenv
+requests
+ddgs
+streamlit

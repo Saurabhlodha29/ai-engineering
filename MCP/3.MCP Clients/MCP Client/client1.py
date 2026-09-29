@@ -22,7 +22,8 @@ SERVERS = {
         },
         "expense": {
             "transport": "streamable-http",
-            "url": "https://receive-gbp-ontario-finding.trycloudflare.com/mcp"
+            # We ran the MCP server through a Cloudflare tunnel rather than actually deploying it and using a live web URL, so this URL changes everytime you do that.
+            "url": "https://receive-gbp-ontario-finding.trycloudflare.com/mcp" 
         },
         "manim-server": {
             "command": "C:/Users/saura/AppData/Local/Programs/Python/Python311/python.exe",
