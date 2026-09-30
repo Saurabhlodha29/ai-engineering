@@ -30,6 +30,12 @@ langchain-huggingface
 langchain-community
 langgraph-checkpoint-sqlite
 
+# RAG Dependencies
+pypdf
+faiss-cpu
+sentence-transformers
+langchain-voyageai
+
 # Other necessary requirements : 
 dotenv
 requests
