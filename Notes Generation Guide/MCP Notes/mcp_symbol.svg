@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="80" viewBox="0 0 120 80">
+  <title>MCP canonical symbol</title>
+  <path d="M 8 53 C 18 18, 27 8, 38 31 L 50 56 C 54 64, 62 65, 68 55 L 82 28 C 88 17, 96 19, 105 46" fill="none" stroke="#F7F0EC" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 10 58 C 20 25, 29 17, 40 37 L 52 61 C 56 69, 64 70, 70 60 L 84 34 C 90 24, 97 26, 105 52" fill="none" stroke="#D7A8BC" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+</svg>
