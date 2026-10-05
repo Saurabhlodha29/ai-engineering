@@ -29,6 +29,7 @@ langchain-groq
 langchain-huggingface
 langchain-community
 langgraph-checkpoint-sqlite
+langgraph-checkpoint-postgres
 
 # RAG Dependencies
 pypdf
@@ -41,3 +42,4 @@ dotenv
 requests
 ddgs
 streamlit
+psycopg[binary,pool]
